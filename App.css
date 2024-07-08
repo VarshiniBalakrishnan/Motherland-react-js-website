@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive {
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For larger screens like laptops (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* For smaller screens like mobile devices (max-width: 320px) */
+@media (max-width: 320px) {
+  .container {
+    flex-direction: column;
+  }
+}
